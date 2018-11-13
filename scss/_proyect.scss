@@ -1,0 +1,82 @@
+.heading {
+    width: 100%;
+    padding: 3em 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__title {
+        font: {
+            weight: bold;
+            size:map-get($map: $fonts, $key: big);
+        }
+    }
+
+    &__score {
+        font-size: map-get($map: $fonts, $key: small);
+
+        &-title {
+            color: map-get($map: $colors, $key: titlescore);
+        }
+    }
+}
+
+.game {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-size: 16px;
+
+    &__button {
+        width: 30%;
+        height: 45px;
+        font-size: map-get($map: $fonts, $key: mid);
+        color: map-get($map: $colors, $key: font);
+        border: {
+            style: none;
+            width: 0;
+            radius: 10px;
+        }
+
+        &-case {
+            width: 100%;
+            padding: 1rem 0.5rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &-rock {
+            background-color: map-get($map: $colors, $key: piedra);
+            
+            &:active, &:hover {
+                background-color: darken(map-get($map: $colors, $key: piedra), $amount: 10%);
+            }
+        }
+
+        &-paper {
+            background-color: map-get($map: $colors, $key: papel);
+            &:active, &:hover {
+                background-color: darken(map-get($map: $colors, $key: papel), $amount: 10%);
+            }
+        }
+
+        &-scissor {
+            background-color: map-get($map: $colors, $key: tijera);
+            &:active, &:hover {
+                background-color: darken(map-get($map: $colors, $key: tijera), $amount: 10%);
+            }
+        }
+    }
+
+    &__title {
+        padding: 1rem 3rem;
+        text-align: center;
+        font-size: map-get($map: $fonts, $key: mid);
+    }
+
+    &__results {
+        line-height: 1.5;
+        font-size: map-get($map: $fonts, $key: big);
+    }
+}

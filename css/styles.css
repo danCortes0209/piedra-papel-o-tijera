@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  font-family: Arial; }
+
+body {
+  font-size: 1.2rem;
+  background-color: #000000;
+  color: #e4fde1; }
+
+.piedra {
+  color: #dd1c1a; }
+
+.papel {
+  color: #0081af; }
+
+.tijera {
+  color: #32e56e; }
+
+.heading {
+  width: 100%;
+  padding: 3em 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .heading__title {
+    font-weight: bold;
+    font-size: 2.1em; }
+  .heading__score {
+    font-size: 0.8em; }
+    .heading__score-title {
+      color: #7a306c; }
+
+.game {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-size: 16px; }
+  .game__button {
+    width: 30%;
+    height: 45px;
+    font-size: 1.1em;
+    color: #e4fde1;
+    border-style: none;
+    border-width: 0;
+    border-radius: 10px; }
+    .game__button-case {
+      width: 100%;
+      padding: 1rem 0.5rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+    .game__button-rock {
+      background-color: #dd1c1a; }
+      .game__button-rock:active, .game__button-rock:hover {
+        background-color: #af1615; }
+    .game__button-paper {
+      background-color: #0081af; }
+      .game__button-paper:active, .game__button-paper:hover {
+        background-color: #005b7c; }
+    .game__button-scissor {
+      background-color: #32e56e; }
+      .game__button-scissor:active, .game__button-scissor:hover {
+        background-color: #1aca55; }
+  .game__title {
+    padding: 1rem 3rem;
+    text-align: center;
+    font-size: 1.1em; }
+  .game__results {
+    line-height: 1.5;
+    font-size: 2.1em; }

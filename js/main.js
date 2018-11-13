@@ -7,7 +7,7 @@ const rockButton = document.getElementById("button-rock"),
     pcScoreContainer = document.getElementById("pc-score"),
     playableThings = ["Piedra","Papel","Tijera"];
 
-let decisionRes = "Empate :/",
+let decisionRes = "Empataste :/",
     userScore = 0, 
     pcScore = 0;
 
@@ -32,7 +32,7 @@ const getPCChoice = (choiceArray) => {
 const getDecision = (userChoice, computerChoice, decisionResult, displayResult, decisionContainer, displayScore, userScore, pcScore, userScoreContainer, pcScoreContainer) => {
     //modifica el mensaje en base a las opciones
     if(userChoice === computerChoice) {
-        decisionResult = "Empate :/";
+        decisionResult = "Empataste :/";
     } else {
         if (userChoice === "Piedra" && computerChoice === "Tijera" ) {
             decisionResult = "Ganaste :D";

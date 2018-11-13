@@ -1,0 +1,11 @@
+.piedra {
+    color: map-get($map: $colors, $key: piedra);
+}
+
+.papel {
+    color: map-get($map: $colors, $key: papel);
+}
+
+.tijera {
+    color: map-get($map: $colors, $key: tijera);
+}
